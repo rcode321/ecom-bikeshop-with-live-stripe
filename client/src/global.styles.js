@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
 .footer {
     border-top: 1px solid rgb(51, 51, 51);
     margin-top: 5rem;
@@ -22,4 +25,9 @@ a {
 
 body {
     font-family: 'Montserrat', sans-serif;
+
+    @media screen and (max-width: 800px) {
+        padding: 10px;
+    }
 }
+`;
