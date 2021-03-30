@@ -10,7 +10,7 @@ $main-color: black;
 .group {
   position: relative;
   margin: 45px 0;
- 
+
   .form-input {
     background: none;
     background-color: white;
@@ -23,7 +23,7 @@ $main-color: black;
     border-radius: 0;
     border-bottom: 1px solid $sub-color;
     margin: 25px 0;
- 
+
     &:focus {
       outline: none;
     }
@@ -51,6 +51,10 @@ $main-color: black;
       @include shrinkLabel();
     }
   }
+
+  @media screen and (max-width: 450px) {
+    margin: 2rem;
+  }
 }
 $sub-color: grey;
 $main-color: black;
@@ -77,7 +81,7 @@ $main-color: black;
     border-radius: 0.2rem;
     border: 1px solid $sub-color;
     margin: 5px 0;
-    
+
     &:focus {
       outline: none;
       border-color: rgb(32, 105, 241);

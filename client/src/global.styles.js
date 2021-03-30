@@ -27,7 +27,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 
     @media screen and (max-width: 800px) {
-        padding: 10px;
+        padding: 20px;
     }
 }
 `;

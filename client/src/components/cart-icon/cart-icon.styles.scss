@@ -1,23 +1,36 @@
 .cart-icon {
-    width: 105px;
-    height: 45px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    
-    .shopping-icon {
-      width: 30px;
-      height: 30px;
-    }
-  
-    .item-count {
-      position: absolute;
-      font-size: 20px;
-      font-weight: bold;
-      bottom: 29px;
-      padding-left: 6px;
-      color: rgb(29, 158, 245);
+  width: 105px;
+  height: 45px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  .shopping-icon {
+    width: 30px;
+    height: 30px;
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      margin-bottom: 1rem;
     }
   }
+
+  .item-count {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    bottom: 29px;
+    padding-left: 6px;
+    color: rgb(29, 158, 245);
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    margin-bottom: 1rem;
+    width: inherit;
+  }
+}
