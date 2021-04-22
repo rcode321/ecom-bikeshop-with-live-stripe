@@ -8,7 +8,7 @@ const Hero = () => (
     <div className="HeadingTitleContainer">
       <h1 className="headingTitle">new arrivals</h1>
       <p className="subtitleHero">
-        Featuring our latest collections and releases..
+        Featuring our latest collections and releases.
       </p>
     </div>
     <img className="heroImage" src={heroBanner} alt="heroBannerImage" />
